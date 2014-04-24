@@ -1,0 +1,15 @@
+non binaire
+chargement
+FileReader fr = new FileReader("file");
+BufferedReader br = new BufferedReader(fr);
+
+sauvegarde
+FileWriter fw = new FileWriter("file");
+BufferedWriter bw = new BufferedWriter(fw);
+
+binaire
+chargement
+FileInputStream fs = new FileInputStream("file");
+ObjectInputStream os = new ObjectInputStream(fs);
+int a = (int) os.readObject();
+double b = (double) os.readObject();

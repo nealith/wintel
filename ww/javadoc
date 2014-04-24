@@ -1,0 +1,14 @@
+#!/bin/tcsh
+echo Creation de la javadoc...
+cd ../src/
+set temp="a"
+set j=0
+foreach i (`find | grep .java`)
+	if ($j == 0) then
+		set temp=$i 
+	else
+		set temp="$temp $i"
+	endif
+	@ j++
+end
+javadoc -author -private -version -d ../doc/ $temp
