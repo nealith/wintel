@@ -11,4 +11,4 @@ foreach i (`find | grep .java`)
 	endif
 	@ j++
 end
-javac -d ../class/ $temp
+javac -Xlint -d ../class/ $temp

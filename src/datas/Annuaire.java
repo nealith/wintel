@@ -7,7 +7,7 @@ import java.util.Hashtable;
 /**
 *class Annuaire
 *@version 1.0
-*@author Nicolas Sonet
+*@author <a href="mailto:sonet.e1301490@etud.univ-ubs.fr">Nicolas Sonet</a>
 */
 
 public class Annuaire implements Serializable {
@@ -168,6 +168,10 @@ public class Annuaire implements Serializable {
 
 // -----------------------------------------------------------------------------------
 
+	/**
+	*Permet de sauvegarder dans le fichier ../data/annuaire.out
+	*/
+
 	public void sauver() {
 
 		try {
@@ -185,6 +189,13 @@ public class Annuaire implements Serializable {
 	}
 
 // -----------------------------------------------------------------------------------
+
+	/**
+	*Permet de supprimer une Fiche en donnant la Cle.
+	*@param cle Cle contenant le nom et prenom de la personne a supprimer
+	*@throws IllegalArgumentException Si la cle est non valide
+	*@throws NoSuchElementException Si la cle n'existe pas
+	*/
 
 	public void supprimer(Cle cle) throws IllegalArgumentException, NoSuchElementException {
 
@@ -206,7 +217,12 @@ public class Annuaire implements Serializable {
 
 // -----------------------------------------------------------------------------------
 
-	public int taille(Cle cle) {
+	/**
+	*Renvoi le nombre de Fiches stoquees dans l'Annuaire.
+	*@return nombre de Fiches stoquees
+	*/
+
+	public int taille() {
 
 		Enumeration<Cle> enu = cles();
 

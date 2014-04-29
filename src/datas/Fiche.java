@@ -5,7 +5,7 @@ import java.util.*;
 /**
 *class Fiche
 *@version 1.0
-*@author Nicolas Sonet
+*@author <a href="mailto:sonet.e1301490@etud.univ-ubs.fr">Nicolas Sonet</a>
 */
 
 public class Fiche implements Serializable {

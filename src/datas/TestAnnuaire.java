@@ -29,8 +29,8 @@ public class TestAnnuaire {
 		data[4][0] = "Daniel";
 		data[4][1] = "Maxime";
 		data[4][2] = Telephone.getRandomNum();
-		data[5][0] = "Conan";
-		data[5][1] = "Sylvain";
+		data[5][0] = "Ringenbach";
+		data[5][1] = "Romain";
 		data[5][2] = Telephone.getRandomNum();
 
 		Cle[] tab = new Cle[6];

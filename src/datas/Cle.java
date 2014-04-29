@@ -4,7 +4,7 @@ import java.io.Serializable;
 /**
 *class CLe
 *@version 1.0
-*@author Nicolas Sonet
+*@author <a href="mailto:sonet.e1301490@etud.univ-ubs.fr">Nicolas Sonet</a>
 */
 
 public class Cle implements Serializable {
@@ -37,13 +37,17 @@ public class Cle implements Serializable {
 
 		if (obj != null) {
 
-			if (this.hashCode() == obj.hashCode()) {
+			if (this.hashCode() == obj.hashCode()) { // check le hashcode
 
-				Cle tmp = (Cle) obj;
+				if (obj.getClass().getName().equals(this.getClass().getName())) { // check le nom de la classe
 
-				if (this.getKey().equals(tmp.getKey())) {
+					Cle tmp = (Cle) obj;
 
-					ret = true;
+					if (this.getKey().equals(tmp.getKey())) { // check les clés
+
+						ret = true;
+
+					}
 
 				}
 
